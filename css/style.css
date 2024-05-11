@@ -1,0 +1,701 @@
+/* 全体共通 */
+body {
+	font-family: "Nico Moji", 'M PLUS Rounded 1c', sans-serif, 'Monomaniac One', sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+/* パディングをサイズ内側にする処理 */
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* 全体 */
+body {
+	background-color: white;
+}
+
+/* スタート画面 */
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 765px;
+	color: red;
+	font-size: 60px;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+}
+
+.start p span {
+	color: #ffd700;
+}
+
+/* ナビゲーション */
+.nav {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	background-color: #222222;
+	color: white;
+}
+
+.nav_logo {
+	margin-left: 100px;
+}
+
+.nav_logo:hover {
+	opacity: 0.7;
+}
+
+.nav_logo_image {
+	width: 100%;
+}
+
+.nav_text {
+	font-size: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+}
+
+.nav_text p {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+}
+
+.nav_text p a {
+	width: 100px;
+	text-align: center;
+	color: inherit;
+}
+
+.nav_text p a:hover {
+	color: red;
+}
+
+/* ヘッダー */
+.header {
+	background: url(../img/バカチンガー/バカチンガー広報イラスト\ \(2\).png);
+	background-size: 25%;
+	background-color: white;
+	background-repeat: no-repeat;
+	/* font-family: Comic; */
+	width: auto;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 85px;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+	border: solid #222222;
+}
+
+.header h1 {
+	color: aliceblue;
+	margin: 40px;
+	color: red;
+	font-size: 70px;
+	margin-bottom: 0;
+}
+
+.header h1 span {
+	color: #ffd700;
+}
+
+.header p {
+	font-size: 55px;
+	color: black;
+}
+
+/* ABOUT */
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url(../img/バカチンガー/バカチンガー広報イラスト\ \(1\).png);
+	background-repeat: no-repeat;
+	background-size: 28%;
+	background-position: right 70%;
+	background-color: #ffd700;
+	padding-bottom: 80px;
+	height: 50%;
+}
+
+.about_between {
+	margin-bottom: 24px;
+}
+
+.about h2 {
+	color: red;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+	font-size: 40px;
+	padding-top: 90px;
+}
+
+.about_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.about_text_1 {
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+
+.about_text_2 {
+	margin-bottom: 40px;
+	text-shadow: 0.5px 0.5px 0 #fff, 0.5px 0.5px 0 #000;
+	background: linear-gradient(transparent 60%, red 30%);
+	font-size: 30px;
+}
+
+.about_text_3 {
+	margin-bottom: 40px;
+	color: red;
+	font-size: 20px;
+	text-shadow: 0.01px 0.01px 0 #fff, 0.1px 0.1px 0 #000;
+}
+
+
+/* COURSE */
+.course {
+	padding-bottom: 24px;
+	background-color: #ffd700;
+}
+
+.course h2 {
+	font-size: 40px;
+	color: red;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+	padding-top: 80px;
+}
+
+.course_text li {
+	display: flex;
+	justify-content: center;
+	font-size: 28px;
+}
+
+/* box6 */
+.box6 {
+	width: 1350px;
+	margin: auto;
+	padding: auto;
+	margin-bottom: 100px;
+	background-color: white;
+}
+
+.box6_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 60px;
+}
+
+.box6_1 img {
+	width: 50%;
+}
+
+.box6_1_text {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+
+.box6_1_text div {
+	width: 60%;
+}
+
+.box6_1_text div h3 {
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: #222222;
+}
+
+.box6_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box6_2_text {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+
+.box6_2 img {
+	width: 50%;
+}
+
+.box6_2_text div {
+	width: 60%;
+}
+
+.box6_2_text div h3 {
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: #222222;
+}
+
+.box6_3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box6_3 img {
+	width: 50%;
+}
+
+.box6_3_text {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+}
+
+.box6_3_text div {
+	width: 60%;
+}
+
+.box6_3_text div h3 {
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: #222222;
+}
+
+.meigen {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+/* slideshow */
+.wrap {
+	display: flex;
+	align-items: center;
+	height: 500px;
+	overflow: hidden;
+}
+
+.slideshow {
+	display: flex;
+	animation: loop-slide 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.slideshow img {
+	margin-bottom: 100px;
+}
+
+/* NEWS */
+.news0 {
+	background-color: #ffd700;
+	padding-bottom: 80px;
+}
+
+.news {
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.news h2 {
+	font-size: 40px;
+	color: red;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+	margin-bottom: 10px;
+	padding-top: 80px;
+}
+
+.news p {
+	font-size: 28px;
+	margin-bottom: 24px;
+}
+
+.news_pic3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.news_pic3_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+}
+
+.news_pic3_1:hover {
+	opacity: 0.6;
+}
+
+.news_pic3_1_date {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.news_pic3_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+	margin: 0px 32px 0px 32px;
+}
+
+.news_pic3_2:hover {
+	opacity: 0.6;
+}
+
+.news_pic3_2_date {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.news_pic3_3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 300px;
+}
+
+.news_pic3_3:hover {
+	opacity: 0.6;
+}
+
+.news_pic3_3_date {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.more {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.more:hover {
+	opacity: 0.6;
+}
+
+.more_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: red;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	border-radius: 3px;
+	box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+
+/* ACCESS */
+.access {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffd700;
+}
+
+.access h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 80px;
+	margin-bottom: 24px;
+	color: red;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+	font-size: 40px;
+}
+
+.access_school {
+	margin-bottom: 64px;
+	font-size: 28px;
+}
+
+.access_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	margin-top: 64px;
+	margin-bottom: 56px;
+}
+
+.access_text_left {
+	margin-right: 48px;
+	margin-left: 48px;
+}
+
+.access_text_left div ul li {
+	margin-bottom: 24px;
+}
+
+.access_text_right div ul li {
+	margin-bottom: 24px;
+}
+
+/* CONTACT */
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffd700;
+}
+
+.contact h2 {
+	padding-top: 80px;
+	padding-bottom: 24px;
+	font-size: 40px;
+	color: red;
+	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #000;
+
+}
+
+.contact p {
+	font-size: 28px;
+	margin-bottom: 24px;
+}
+
+.contact_text_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 24px;
+	font-size: 25px;
+}
+
+.contact_text_2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	color: crimson;
+}
+
+/* 申込み＆問合せフォーム */
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffd700;
+}
+
+/* 名前/カナ/メールアドレス＋TEXT */
+.form_textline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px;
+	margin-top: 80px;
+}
+
+.form_textline_text {
+	margin-top: 17px;
+}
+
+.form_textline_text li {
+	height: 36px;
+	margin-bottom: 24px;
+	margin-right: 120px;
+}
+
+.form_textline_box input {
+	width: 328px;
+	height: 36px;
+	border: solid #bfbfbf;
+	margin-bottom: 24px;
+	background-color: white;
+}
+
+/* 志望動機＋チェックBOX */
+.form_douki {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 40px;
+	margin-bottom: 32px;
+	margin-left: 127px;
+	width: 670px;
+}
+
+.form_douki_checkbox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin-right: 237px;
+}
+
+.form_douki_checkbox_checkbox {
+	margin-right: 35px;
+}
+
+.form_douki_checkbox_checkbox p {
+	margin-bottom: 24px;
+}
+
+.form_douki_checkbox_checkbox p input {
+	height: 24px;
+	width: 24px;
+	accent-color: #f0ebe5;
+}
+
+.form_douki_checkbox_textbox {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.form_douki_checkbox_textbox p {
+	margin-bottom: 27px;
+}
+
+/* メッセージ */
+.form_detail {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 32px;
+	margin-left: 32px;
+	width: 560px;
+}
+
+.form_detail_text {
+	margin-right: 120px;
+}
+
+.form_detail p textarea {
+	width: 328px;
+	height: 108px;
+	border: solid #bfbfbf;
+	margin-right: 34px;
+	background-color: white;
+}
+
+/* 送信 */
+.sent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: red;
+	font-size: 21px;
+	width: 300px;
+	height: 60px;
+	border-radius: 3px;
+	box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+	margin-top: 56px;
+	margin-bottom: 48px;
+}
+
+.sent:hover {
+	opacity: 0.6;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.pagetop {
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	right: 30px;
+	bottom: 95px;
+	background: red;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
+
+.pagetop:hover {
+	opacity: 0.6;
+}
+
+.pagetop_arrow {
+	height: 10px;
+	width: 10px;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+	transform: translateY(20%) rotate(-45deg);
+}
+
+.copyrights {
+	background-color: black;
+	padding: 32px;
+	font-size: 18px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

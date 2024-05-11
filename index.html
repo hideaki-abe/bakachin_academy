@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>チーズアカデミー</title>
+    <meta name="description" content=“世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。”>
+    <meta property="og:title" content="チーズアカデミー">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta property="og:site_name" content="チーズアカデミー" />
+    <meta property="og:description" content="世界を変えるチーズを作ろう。チーズアカデミーは、チーズ職人を養成するための学校です。" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="canonical" href="#">
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https: //fonts.googleapis.com/css2? family= M+PLUS+Rounded+1c:wght@700 & family= Monomaniac+One & display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </script>
+</head>
+
+<body>
+    <!-- スタート画面 -->
+    <div class="start">
+        <p><img src="./img/バカチンガー/バカチンガー広報イラスト (2).png" alt=""><br>バカチンガー式<span>★</span>チーズ学校</p>
+    </div>
+
+    <!-- ナビゲーション -->
+    <nav class="nav">
+        <a href="https://www.fbs.co.jp/bakachinga/" class="nav_logo">
+            <img src="./img/バカチンガー/バカチンガーロゴ02_サイズ調整済.png" width="90%" height="90%">
+        </a>
+        <div class="nav_text">
+            <p>
+                <a href="./index.html">ABOUT</a>
+                <a href="./course.html">COURSE</a>
+                <a href="./news.html">NEWS</a>
+                <a href="./access.html">ACCESS</a>
+                <a href="./contact.html">CONTACT</a>
+            </p>
+        </div>
+    </nav>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <h1>バカチンガー式<span>★</span>チーズ学校</h1>
+        <p>チーズアカデミーFUKUOKA</p>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="about_between">
+            <h2 id="ABOUT">ABOUT</h2>
+        </div class="about_text">
+        <div class="about_text_1">
+            <p>バカチンガー式★チーズアカデミーについて</p>
+        </div>
+        <div class="about_text_2">
+            <p>本アカデミーは、福岡のヒーロー「バカチンガー」による特殊なチーズ学校です。</p>
+        </div>
+        <div class="about_text_3">
+            <p>【注意】バカチンガーはチーズを作ったがことないので、愛のある説教しかできません。</p>
+        </div>
+        <iframe width="760" height="415" src="https://www.youtube.com/embed/03VH65gObbo?si=Sd71grZdOqHMRUgm"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- ページトップボタン -->
+    <a class="pagetop" href="#">
+        <div class="pagetop_arrow"></div>
+    </a>
+
+    <!-- フッター -->
+    <footer class="copyrights">
+        <P>copyrights 2016-2024 Cheese Academy Fukuoka All RIghts Reserved.</P>
+    </footer>
+
+    <!-- スタート画面JS -->
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $('.start p').fadeIn(1600);
+            }, 500); //0.5秒後フェードイン
+            setTimeout(function () {
+                $('.start').fadeOut(500);
+            }, 3500); //3.5秒後フェードアウト
+        });
+    </script>
+</body>
+
+</html>
